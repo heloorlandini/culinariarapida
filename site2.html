@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta</title>
+    <style>
+        .box {
+            width: 900px;
+            height: 600px;
+            background-color: rgba(219, 238, 181, 0.322);
+            padding: 20px;
+            border: 3px solid rgb(122, 169, 102);
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 2px 4px 8px rgb(17, 17, 17);
+        }
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+        p{
+            text-align: justify;
+        }
+        hr {
+            border: 2px solid rgb(114, 165, 91);
+        }
+     
+          
+      
+    </style>
+    <link rel="Icon" href="vegan.png"> 
+</head>
+<body>
+    
+    <div class="box">
+    <h1> Vamos marcar uma consulta online?</h1>
+    <hr>
+    <p>Bem-vindo(a)! Aqui você encontra um espaço prático e confiável para realizar suas consultas de forma rápida, segura e acessível. Nosso objetivo é facilitar seu acesso à informação e atendimento, sempre com qualidade e confiança.</p>
+    <label>Nome do Paciente:</label>
+    <br>
+    <input type="text" name="nome"  placeholder="Digite seu nome aqui!" required">
+    <br><br>
+    <label>CPF:</label>
+    <br>
+    <input type="number" name="nome"  placeholder="Digite seu cpf aqui!" required">
+    <br><br>
+    <label>Telefone:</label>
+    <br>
+    <input type="number" name="nome"  placeholder="Digite seu telefone aqui!" required">
+    <br><br>
+    <label> O que você deseja?:</label>
+    <br>
+    <textarea rows="5" cols="50"></textarea>
+    <br><br>
+    <input type="submit" name="enviar" value="Enviar consulta">
+    <br><br>
+    <h3> Whatsapp</h3>
+    <a href="https://wa.me/5514996999999" target="_blank">Clique aqui para tirar suas duvidas!</a>
+    <br><br>
+
+    
+    <a href="site1.html">Ir para pagina 1</a>
+
+    <!-- Plugin VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>;
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+</div>
+</body>
+</html>
